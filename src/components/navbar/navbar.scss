@@ -1,0 +1,52 @@
+.navbar {
+    height: 70px;
+    width: 100%;
+    font-family: "Oxygen Mono";
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+    
+    position: fixed;
+    z-index: 999;
+
+    .wrapper {
+        max-width: 1366px;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        span {
+            display: flex;
+            gap: 20px;
+
+            a {
+                position: relative;
+                color: #212427; /* Set the desired text color */
+            }
+            a::before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 1.5px; /* Set the desired underline thickness */
+                background-color: #000; /* Set the desired underline color */
+                bottom: 0;
+                left: 0;
+                transition: width 0.3s ease; /* Set the animation duration and timing function */
+            }
+
+            /* Triggering the animation on hover */
+            a:hover::before {
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
