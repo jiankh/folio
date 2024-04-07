@@ -1,5 +1,6 @@
 import "./hero.scss"
 import { easeIn, motion } from "framer-motion"
+import { useInView } from "react-intersection-observer";
 
 const sliderVariants = {
     initial: {
@@ -31,7 +32,11 @@ const textVariants = {
             delay: 1
         }
     },
-    hidden: { opacity: 0, scale: 0.65 }
+    exit: {
+        opacity:0,
+        y: "100%",
+        transition: {duration: 1}
+    }
 }
 
 const subtextVariant = {
@@ -49,13 +54,22 @@ const subtextVariant = {
 }
 
 const Hero = () => {
+
+    const [ref, inView] = useInView({
+        triggerOnce:true,
+        threshold:0.4
+    })
+
+    console.log("InView:", inView);
+
     return (
         <div className="hero">
             <div className="wrapper">
                 <div className="box">
                     <motion.div
+                        ref={ref}
                         className="welcome"
-                        variants={textVariants}
+                        
                         initial="initial"
                         animate="animate"
                     >WELCOME, AND
@@ -89,10 +103,10 @@ const Hero = () => {
                 <div className="box">
                     <motion.div
                         className="name"
-                        variants={textVariants}
+                        
                         initial="initial"
                         animate="animate"
-                        exit="hidden"
+                        exit="exit"
                     >
                         I'M JEAN HUANG
                     </motion.div>

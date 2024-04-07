@@ -1,7 +1,7 @@
 .hero{
     // height: calc(100vh - 70px);
     height: 100vh;
-    background: linear-gradient(180deg , #bebebe,#f2f2f2 );
+    background: linear-gradient(180deg , #ece9e9,#ebebeb );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,6 +12,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        gap: 15px;
         align-items: center;
         font-size: 15vh;
         position: relative;
@@ -21,11 +22,9 @@
             font-size: 24px;
             position: absolute;
             right:0;
-            top:20%;    
-            
+            top:15%;    
         }
-        
-        
+               
 
         .slidingContainer {
             white-space: nowrap;
@@ -53,11 +52,5 @@
 
     }
 
-            
-
-    
-
-    
-    
 
 }

@@ -5,10 +5,11 @@ const Navbar = () => {
 
     return (
         <motion.div 
-        initial={{y:-70}}
-        transition={{duration:1}}
-        animate={{y:0}}
-        className="navbar">
+        initial={{ y: -70  }}
+        animate={{ y: 0  }}
+        transition={{ duration: 0.5 }}
+        className="navbar"
+        >
             
             <div className="wrapper">
                 <motion.div className="logo">               
