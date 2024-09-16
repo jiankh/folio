@@ -5,6 +5,7 @@ import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Technology from "./components/technology/Technology";
 import Project from "./components/project/Project";
+import Contact from "./components/contact/Contact";
 
 const App = () => {
     const [showNav, setShowNav] = useState(true);
@@ -52,7 +53,9 @@ const App = () => {
                 <Project />
             </section>
             
-            <section></section>
+            <section>
+                <Contact />
+            </section>
         </div>
     );
 }

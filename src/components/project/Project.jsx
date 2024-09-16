@@ -74,6 +74,12 @@ const Project = () => {
 
             </div>
 
+            <div className="more-projects">
+                <a href="">
+                    see more
+                </a>
+            </div>
+
 
         </div>
     )
