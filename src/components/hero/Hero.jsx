@@ -84,7 +84,7 @@ const Hero = () => {
                     animate="animate"
                     >
                     <hr />
-                    Software Engineer / Web Dev   |  NYC
+                    {/* Software Engineer / Web Dev   |  NYC */}
                 </motion.div>
             
 
