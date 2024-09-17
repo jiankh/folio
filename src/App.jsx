@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import Technology from "./components/technology/Technology";
 import Project from "./components/project/Project";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
     const [showNav, setShowNav] = useState(true);
@@ -56,6 +57,8 @@ const App = () => {
             <section>
                 <Contact />
             </section>
+
+            <Footer />
         </div>
     );
 }

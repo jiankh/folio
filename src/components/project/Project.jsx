@@ -76,7 +76,7 @@ const Project = () => {
 
             <div className="more-projects">
                 <a href="">
-                    see more
+                    {/* see more */}
                 </a>
             </div>
 

@@ -20,8 +20,8 @@ const sliderVariants = {
 
 const textVariants = {
     initial: {
-        y: "100%",
-        opacity: 1
+        y: "-100%",
+        opacity: 0
     },
     animate: {
         y: 0,
@@ -29,7 +29,7 @@ const textVariants = {
         transition: {
             duration: 1,
             ease: easeIn,
-            delay: 1
+            delay: 0
         }
     },
     exit: {
@@ -60,7 +60,7 @@ const Hero = () => {
         threshold:0.4
     })
 
-    console.log("InView:", inView);
+    // console.log("InView:", inView);
 
     return (
         <div className="hero">
@@ -69,7 +69,7 @@ const Hero = () => {
                     <motion.div
                         ref={ref}
                         className="welcome"
-                        
+                        variants={textVariants}
                         initial="initial"
                         animate="animate"
                     >WELCOME, AND
@@ -103,7 +103,7 @@ const Hero = () => {
                 <div className="box">
                     <motion.div
                         className="name"
-                        
+                        variants={textVariants}
                         initial="initial"
                         animate="animate"
                         exit="exit"

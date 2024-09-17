@@ -9,6 +9,7 @@ const Navbar = () => {
         animate={{ y: 0  }}
         transition={{ duration: 0.5 }}
         className="navbar"
+        
         >
             
             <div className="wrapper">
