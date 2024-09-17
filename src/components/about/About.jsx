@@ -40,8 +40,7 @@ const About = () => {
             </div>
 
             <motion.div style={{y:yBg}} className="aboutText">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti nam nihil modi quasi doloribus odit qui incidunt ea voluptates saepe, error consequatur impedit, est, quos laboriosam illum aliquam tenetur natus.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque repellat nobis excepturi ex perspiciatis et, voluptatum fugit aliquid deserunt, voluptatem molestias ab quas veritatis. Eveniet explicabo repudiandae reprehenderit. Alias, dolore?
+                Hey! I'm Jean Huang, a tech enthusiast living in New York City. With a background in Biomedical Engineering, I've always been drawn to the intersection of technology and innovation. This passion led me to transition my career and dive into the world of programming and software development. As a self-taught and driven individual, I'm constantly seeking new challenges and opportunities to grow. I'm excited to apply my skills and knowledge to exciting projects.
             </motion.div>
         </div>
 

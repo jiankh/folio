@@ -13,7 +13,7 @@ const sliderVariants = {
             repeatType: "loop",
             duration: 30,
             ease: "linear",
-            delay: 1.5
+            delay: 0
         }
     }
 }

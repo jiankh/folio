@@ -2,35 +2,29 @@ const Projects = [
     {
         title: "WeatherApp",
         img: "./images/weatherapp.png",
-        description: "Weather App created using WeatherAPI. The application retrieves data from the API based on the input location and displays the current weather along with other details for the day. It also shows the hourly forecast and a forecast for the next 3 days. It also features a switch to change between Fahrenheit and Celsius",
+        description: "Weather App is a user-friendly tool that provides accurate and up-to-date weather information. Simply enter your desired location, and the app will deliver detailed forecasts tailored to your needs. From current conditions to hourly and 3-day outlooks, you'll have all the information you need to plan your day. Plus, you can easily switch between Fahrenheit and Celsius to match your preferred unit of measurement. Create using WeatherAPI",
         codeLink: "https://github.com/jiankh/weather-app",
         previewLink: "https://jiankh.github.io/weather-app/"
     },
-    {
-        title: "Binary Search Tree",
-        img: "./images/BST.png",
-        description: "Binary Search Tree application that shows the different types of traversals through a binary search tree. This visual guide helps people understand BST and has interactive features like inserting nodes, deleting nodes, finding the depth of a specific node, and also re-balancing of the BST.",
-        codeLink: "https://github.com/jiankh/dsa_exercises/tree/main/binary_search_trees",
-        previewLink: "https://jiankh.github.io/dsa_exercises/"
-    },
+    
     {
         title: "CV Builder",
         img: "./images/cvbuilder.png",
-        description: "A simple but effective CV Layout Builder made with React. Allows the user to create an efficient resume in no time, and download it for use.",
+        description: "CV Builder is a user-friendly tool that simplifies the process of creating simplistic resumes. With its intuitive interface, you can easily construct a CV that showcases your skills and experiences effectively. Once you're satisfied with your creation, download your finished resume in various formats for easy application.",
         codeLink: "https://github.com/jiankh/CVMaker",
         previewLink: "https://jiankh.github.io/CVMaker/"
     },
     {
         title: "Bakery Website",
         img: "./images/bakery.png",
-        description: "Frontend React website for a mock restaurant with several functional tabs. The main focus of this project was to modulize the elements of the site for better reusability. The menu items are also stored in an array of object that can easily by editted to add and remove menu items.",
+        description: "My Modular Restaurant Website is a dynamic and user-friendly platform built with React. The project features a well-structured modular design, allowing for easy customization and maintenance. The menu items are efficiently managed using an array of objects, making it simple to update and modify. With its interactive interface and functional tabs, users can easily explore the restaurant's offerings and navigate the site seamlessly.",
         codeLink: "https://github.com/jiankh/sprigsbakery",
         previewLink: "https://jiankh.github.io/sprigsbakery/"
     },
     {
         title: "Tic Tac Toe",
         img: "./images/tictactoe.png",
-        description: "Javascript application of the classic game Tic Tac Toe. Features Multiplayer and Single player. Includes an upbeatable AI when playing singleplayer mode, made with the MiniMax Algorithm.",
+        description: `My Tic-Tac-Toe game is a classic board game implemented in JavaScript. Players can choose between multiplayer and single-player modes. The single-player mode features an unbeatable "AI" opponent powered by the MiniMax algorithm, which is technically imposible to beat.`,
         codeLink: "https://github.com/jiankh/tictactoe",
         previewLink: "https://jiankh.github.io/tictactoe/"
     },
@@ -82,6 +76,13 @@ const Projects = [
         description: "An application that lets user save information about books that they are interested in. The user can also change and see the status of the books if they finished reading it or not.",
         codeLink: "https://github.com/jiankh/libraryProject",
         previewLink: "https://jiankh.github.io/libraryProject/"
+    },
+    {
+        title: "Binary Search Tree",
+        img: "./images/BST.png",
+        description: "Binary Search Tree application that shows the different types of traversals through a binary search tree. This visual guide helps people understand BST and has interactive features like inserting nodes, deleting nodes, finding the depth of a specific node, and also re-balancing of the BST.",
+        codeLink: "https://github.com/jiankh/dsa_exercises/tree/main/binary_search_trees",
+        previewLink: "https://jiankh.github.io/dsa_exercises/"
     },
        
 ]
