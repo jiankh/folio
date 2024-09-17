@@ -1,4 +1,4 @@
-.hero{
+.hero {
     // height: calc(100vh - 70px);
     height: 100vh;
     // background: linear-gradient(180deg , #ece9e9,#ebebeb );
@@ -8,8 +8,8 @@
     align-items: center;
 
     .wrapper {
-        width:1366px;
-        height:100%;
+        width: 1366px;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -19,39 +19,45 @@
         position: relative;
         overflow: hidden;
 
-        .subtitle{
+        font-family: "Anton", sans-serif;
+
+        .subtitle {
             font-size: 24px;
             position: absolute;
-            right:0;
-            top:15%;    
+            right: 0;
+            top: 15%;
         }
-               
 
         .slidingContainer {
             white-space: nowrap;
             width: 100%;
             overflow-x: hidden;
-    
+
             .slidingTextContainer {
-                display:inline-block;
-    
-                pre{
-                    font-style: italic;
+                display: inline-block;
+
+                pre {
+                    font-style: italic !important;
                 }
             }
         }
 
-        .box{
+        .box {
             overflow: hidden;
             width: 100%;
+            
 
-            .name{
+            .name {
                 display: flex;
                 justify-content: end;
+                font-family: "Great Vibes", cursive;
+                font-weight: 400;
+                font-style: normal;
+
+                pre {
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+                }
             }
         }
-
     }
-
-
 }

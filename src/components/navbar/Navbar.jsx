@@ -9,6 +9,7 @@ const Navbar = () => {
         animate={{ y: 0  }}
         transition={{ duration: 0.5 }}
         className="navbar"
+        exit={{ y: 70, opacity:0}} //wont work because it just gets kick out from main app with a trigger
         
         >
             

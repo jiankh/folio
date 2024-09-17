@@ -108,7 +108,7 @@ const Hero = () => {
                         animate="animate"
                         exit="exit"
                     >
-                        I'M JEAN HUANG
+                        <pre>I'M  </pre> Jean Huang
                     </motion.div>
                 </div>
             </div>
