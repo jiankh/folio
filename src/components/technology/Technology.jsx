@@ -16,7 +16,7 @@ const shakeVariants = {
 const Technology = () => {
 
   return (
-    <div className="technology">   
+    <div id="technology" className="technology">   
 
         <h1>Technology</h1>
 

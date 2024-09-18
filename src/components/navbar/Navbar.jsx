@@ -19,10 +19,10 @@ const Navbar = () => {
                 </motion.div>
 
                 <span>
-                    <a href="">about</a>
-                    <a href="">technology</a>
-                    <a href="">projects</a>
-                    <a href="">contact</a>
+                    <a href="#about">about</a>
+                    <a href="#technology">technology</a>
+                    <a href="#project">projects</a>
+                    <a href="#contact">contact</a>
                 </span>
             </div>
         </motion.div>

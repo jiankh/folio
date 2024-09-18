@@ -30,7 +30,7 @@ const About = () => {
     )
 
   return (
-    <div className="about" ref={ref}>   
+    <div id="about" className="about" ref={ref}>   
 
         <motion.h1>About Me</motion.h1>
 

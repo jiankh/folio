@@ -7,6 +7,7 @@ import Technology from "./components/technology/Technology";
 import Project from "./components/project/Project";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Spacer from "./components/Spacer";
 
 const App = () => {
     const [showNav, setShowNav] = useState(true);
@@ -42,7 +43,7 @@ const App = () => {
             <section ref={ref}>
                 <Hero />
             </section>
-
+            <Spacer />
             <section>
                 <About />
             </section>

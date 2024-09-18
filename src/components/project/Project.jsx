@@ -22,9 +22,9 @@ const Project = () => {
     const top4Projects = projects.slice(0, 4)
 
     return (
-        <div className="project" ref={ref}>
+        <div  className="project" ref={ref}>
 
-            <motion.h1>Projects</motion.h1>
+            <motion.h1 id="project" >Projects</motion.h1>
 
             <div className="wrapper">
                 {/* 
