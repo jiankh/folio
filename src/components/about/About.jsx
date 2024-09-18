@@ -26,7 +26,7 @@ const About = () => {
     const yBg = useTransform(
         scrollYProgress,
         [0,1],
-        ["0%", "-25%"]
+        ["0%", "-15%"]
     )
 
   return (
