@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Spacer = () => {
-
-
+const Spacer = ({ height = '50px' }) => {
   return (
-    <div>
-
-    </div>
+    <div style={{
+      width: '100%',
+      height: height,
+      backgroundColor: '#ece9e9',
+    }}></div>
   )
 }
 

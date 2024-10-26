@@ -47,14 +47,15 @@ const App = () => {
             <section>
                 <About />
             </section>
-
+            <Spacer />
             <section>
                 <Technology />
             </section>
+            <Spacer />
             <section>
                 <Project />
             </section>
-            
+            <Spacer />
             <section>
                 <Contact />
             </section>
