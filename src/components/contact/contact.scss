@@ -7,19 +7,25 @@
     gap:10%;
     padding: 1rem 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #e7e7e7;
     
 
     .contact-info{
         padding-left: 10%;
-
         a{
             display:flex;
             align-items: center;
             gap:5px;
+            padding: 5px;
 
             img{
-                width:30px
+                width:30px;
             }
+        }
+        a:hover{
+            opacity: 0.5;
+            transition: 0.3s;
+            transform: scale(1.05);
         }
     }
 
@@ -47,5 +53,6 @@
     }
     footer {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
     }
 }
