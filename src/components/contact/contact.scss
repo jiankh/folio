@@ -8,6 +8,9 @@
     padding: 1rem 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #e7e7e7;
+    box-shadow: outset 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    
+    
     
 
     .contact-info{
@@ -44,9 +47,11 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
+            
         }
         .contact-form>*{
             font-size: 1rem;
+            padding:5px;
         }
 
         

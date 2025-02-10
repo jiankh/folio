@@ -8,58 +8,93 @@ import Project from "./components/project/Project";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Spacer from "./components/Spacer";
+import LoadingScreen from "./components/loading/LoadingScreen";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import Lenis from 'lenis'
+
+gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
-    const [showNav, setShowNav] = useState(true);
-    const ref = useRef(null);
+    const [isLoading, setIsLoading] = useState(true);
+    const [showNav, setShowNav] = useState(false);
 
+    const heroRef = useRef();
+    const aboutRef = useRef()
+    const projectRef = useRef()
+    const technologyRef = useRef()
+    const contactRef = useRef()
+
+
+    //LOADING ANIMATION CONTROL
+    const handleLoadingComplete = () => {
+        setIsLoading(false);
+        setTimeout(() => {
+            setShowNav(true)
+        }, 1000)
+    };
+
+    //HIDE NAVBAR LOGIC
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                // Update state based on whether the ref section is intersecting (on screen)
-                setShowNav(entry.isIntersecting);
-            },
-            {
-                root: null, // null means it will observe changes in relation to the viewport
-                threshold: 0.1, // 10% of the item has to be in view for the callback to run
-            }
-        );
+        if (!isLoading) {
+            const observer = new IntersectionObserver(
+                ([entry]) => {
+                    setShowNav(entry.isIntersecting);
+                },
+                {
+                    root: null,
+                    threshold: 0.1,
+                }
+            );
 
-        if (ref.current) {
-            observer.observe(ref.current);
+            if (heroRef.current) {
+                observer.observe(heroRef.current);
+            }
+
+            // Cleanup function to unobserve when component unmounts or ref changes
+            return () => {
+                if (heroRef.current) {
+                    observer.unobserve(heroRef.current);
+                }
+            };
         }
+    }, [isLoading, heroRef]);
 
-        // Cleanup function to unobserve when component unmounts or ref changes
-        return () => {
-            if (ref.current) {
-                observer.unobserve(ref.current);
-            }
-        };
-    }, [ref]); // Empty dependency array means this effect runs once on mount
+    //Smooth Scrolling Lenis
+    const lenis = new Lenis({})
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+
+
+
+    if (isLoading) {
+        return <LoadingScreen onLoadingComplete={handleLoadingComplete} />;
+    }
+
 
     return (
-        <div>
-            {showNav && <Navbar />}
-            <section ref={ref}>
+        <div className="web-container">
+            <Navbar isVisible={showNav} />
+            <section id="hero" className="section1" ref={heroRef}>
                 <Hero />
             </section>
-            <Spacer />
-            <section>
+            <section id="about" className="section2" ref={aboutRef}>
                 <About />
             </section>
-            <Spacer />
-            <section>
+            <section id="technology" className="section3" ref={technologyRef}>
+                <Spacer />
                 <Technology />
             </section>
-            <Spacer />
-            <section>
+            <section id="project" className="section4" ref={projectRef}>
+                <Spacer />
                 <Project />
             </section>
-            <Spacer />
-            <section>
+            <section id="contact" className="section5" ref={contactRef}>
                 <Contact />
             </section>
-
             <Footer />
         </div>
     );

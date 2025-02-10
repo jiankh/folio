@@ -1,20 +1,19 @@
-html{
-    scroll-snap-type: y;
-    scroll-behavior: smooth;
-    
+html {
+    // scroll-snap-type: y mandatory;
+    // scroll-behavior: smooth;
 }
 
-*{
-    padding:0;
+* {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
 
 body {
     min-width: 1366px;
-    background-color: #FAF9F6;
+    background-color: #faf9f6;
     color: #000000;
+    // overflow-x: hidden;
 }
 
 a {
@@ -22,7 +21,12 @@ a {
     color: inherit;
 }
 
-section{
-    // min-height: 100vh;
-    scroll-snap-align: center;
+.app {
+    height: 100vh;
+    // overflow-x: hidden;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
 }

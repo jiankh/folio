@@ -1,0 +1,85 @@
+:root {
+    --loader-text-color: white; // Add this variable definition
+}
+
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110vh;
+    background-color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    &.fade-out {
+        opacity: 0.7;
+        visibility: hidden;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    .loading-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-bottom: 100px;
+    }
+
+    .progress-container {
+        width: 200px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .progress-bar {
+        height: 100%;
+        background-color: var(--loader-text-color);
+        transition: width 0.05s ease-out;
+    }
+
+    svg {
+        width: 20rem;
+        font-weight: 700;
+
+        text {  
+            font-size: 10rem;
+            stroke-width: 2;
+            letter-spacing: -6px;
+            stroke: var(--loader-text-color);
+            animation: animate-stroke 3s infinite alternate;
+        }
+    }
+}
+
+@keyframes animate-stroke {
+    0% {
+        fill: transparent;
+        stroke: var(--loader-text-color);
+        stroke-width: 3;
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 32%;
+    }
+    50% {
+        fill: transparent;
+        stroke: var(--loader-text-color);
+        stroke-width: 3;
+    }
+    80%, 100% {
+        fill: var(--loader-text-color);
+        stroke: transparent;
+        stroke-width: 3;
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 32% 0;
+    }
+}

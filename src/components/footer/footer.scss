@@ -4,6 +4,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow:outset 0 0 10px 0 rgba(0, 0, 0, 0.1);
     
     pre{
         font-family: 'Oxygen Mono', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

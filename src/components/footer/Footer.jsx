@@ -4,7 +4,7 @@ import './footer.scss'
 const Footer = () => {
   return (
     <footer>
-                 <pre>Jean Huang 2024   Thanks for stopping by!</pre>
+                 <pre>Jean Huang 2025   Thanks for stopping by!</pre>
     </footer>
   )
 }

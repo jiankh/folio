@@ -5,9 +5,16 @@
     font-size: 20px;
     font-weight: 500;
     background-color: white;
-    
     position: fixed;
     z-index: 999;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    
+    transition: transform 0.5s ease, opacity 0.5s ease-in-out;
+    transform: translateY(-100%);
+
 
     .wrapper {
         max-width: 1366px;
@@ -16,10 +23,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+           
 
         .logo {
             font-weight: 700;
             font-size: 24px;
+            padding: 0 20px;
         }
 
         span {
@@ -35,7 +44,7 @@
                 position: absolute;
                 width: 0;
                 height: 1.5px; /* Set the desired underline thickness */
-                background-color: #000; /* Set the desired underline color */
+                background-color: rgb(70, 70, 70); /* Set the desired underline color */
                 bottom: 0;
                 left: 0;
                 transition: width 0.3s ease; /* Set the animation duration and timing function */
@@ -48,5 +57,22 @@
         }
         
     }
+
+    
+
 }
+
+.navbar.hidden {
+    opacity: 0;
+    transform: translateY(-100%); /* Move it out of view */
+    pointer-events: none; /* Prevent interaction when hidden */
+}
+
+.navbar.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move it back into view */
+    pointer-events: auto; /* Allow interaction when visible */
+}
+
+
 

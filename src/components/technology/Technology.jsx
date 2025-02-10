@@ -18,7 +18,7 @@ const Technology = () => {
   return (
     <div id="technology" className="technology">   
 
-        <h1>Technology</h1>
+        <h1>Stack</h1>
 
         <div className="wrapper">
             <div className="tech1">

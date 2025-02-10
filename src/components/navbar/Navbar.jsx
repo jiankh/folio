@@ -1,22 +1,16 @@
-import "./navbar.scss"
-import {motion} from "framer-motion"
+import React from 'react';
+import './Navbar.scss'; 
 
-const Navbar = () => {
-
+const Navbar = ({ isVisible }) => {
     return (
-        <motion.div 
-        initial={{ y: -70  }}
-        animate={{ y: 0  }}
-        transition={{ duration: 0.5 }}
-        className="navbar"
-        exit={{ y: 70, opacity:0}} //wont work because it just gets kick out from main app with a trigger
-        
+        <div
+            className={`navbar ${isVisible ? 'visible' : 'hidden'}`}
         >
-            
+
             <div className="wrapper">
-                <motion.div className="logo">               
+                <div className="logo">
                     jeanh
-                </motion.div>
+                </div>
 
                 <span>
                     <a href="#about">about</a>
@@ -25,8 +19,8 @@ const Navbar = () => {
                     <a href="#contact">contact</a>
                 </span>
             </div>
-        </motion.div>
+        </div>
     )
 }
 
-export default Navbar
+export default Navbar;
