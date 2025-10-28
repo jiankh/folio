@@ -18,8 +18,8 @@ const Projects = [
         title: "Heart Disease Analysis",
         img: "./images/heart.png",
         description: "Heart Disease Analysis with a basic prediction model to compare and contrast different patient's health markers and how they corelated to the probability of heart disease. The model was trained using a dataset from Kaggle.com",
-        codeLink: "https://github.com/jiankh/CVMaker",
-        previewLink: "https://jiankh.github.io/CVMaker/"
+        codeLink: "https://github.com/jiankh/HeartDiseaseAnalysis/blob/main/HeartDiseaseData.ipynb",
+        
     },
     {
         title: "Tic Tac Toe",
