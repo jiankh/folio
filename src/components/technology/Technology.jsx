@@ -71,8 +71,8 @@ const Technology = () => {
             <div className="tech8">
                 <motion.img
                 variants={shakeVariants}
-                whileHover='hover' src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" />
-                Power BI
+                whileHover='hover' src="https://www.svgrepo.com/show/354428/tableau-icon.svg" />
+                Tableau
             </div>
             {/* <div className="tech9">Power BI</div>
             <div className="tech10"></div> */}

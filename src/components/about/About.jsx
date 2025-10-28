@@ -42,7 +42,7 @@ const About = () => {
                 </div>
 
                 <div className="aboutText">
-                    Hey! I'm Jean Huang, a tech enthusiast living in New York City. With a background in Biomedical Engineering, I've always been drawn to the intersection of technology and innovation. This passion led me to transition my career and dive into the world of programming and software development. As a self-taught and driven individual, I'm constantly seeking new challenges and opportunities to grow. I'm excited to apply my skills and knowledge to exciting projects.
+                    Hi, I’m Jean Huang — a data analyst and tech enthusiast from New York City with a background in Biomedical Engineering. I’m passionate about uncovering insights through data and using technology to create impactful solutions. My journey started in engineering, but my curiosity for coding and analytics pushed me to expand into data science and software development. I enjoy blending technical skills with analytical thinking to make data both useful and accessible.
                 </div>
             </div>
 

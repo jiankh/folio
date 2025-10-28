@@ -15,11 +15,11 @@ const Projects = [
         previewLink: "https://jiankh.github.io/CVMaker/"
     },
     {
-        title: "Bakery Website",
-        img: "./images/bakery.png",
-        description: "My Modular Restaurant Website is a dynamic and user-friendly platform built with React. The project features a well-structured modular design, allowing for easy customization and maintenance. The menu items are efficiently managed using an array of objects, making it simple to update and modify. With its interactive interface and functional tabs, users can easily explore the restaurant's offerings and navigate the site seamlessly.",
-        codeLink: "https://github.com/jiankh/sprigsbakery",
-        previewLink: "https://jiankh.github.io/sprigsbakery/"
+        title: "Heart Disease Analysis",
+        img: "./images/heart.png",
+        description: "Heart Disease Analysis with a basic prediction model to compare and contrast different patient's health markers and how they corelated to the probability of heart disease. The model was trained using a dataset from Kaggle.com",
+        codeLink: "https://github.com/jiankh/CVMaker",
+        previewLink: "https://jiankh.github.io/CVMaker/"
     },
     {
         title: "Tic Tac Toe",
@@ -34,6 +34,13 @@ const Projects = [
         description: "The famous Binary Tree Search excercise Knight Travails, but visualized. The knight chess piece is able to travail the chessboard to any cell on the board. This application shows the shortest path that could be taken to a destination selected. The method used to get the shortest path is by utilizing Breadth First Traversal.",
         codeLink: "https://github.com/jiankh/knights-travails",
         previewLink: "https://jiankh.github.io/knights-travails"
+    },
+    {
+        title: "Bakery Website",
+        img: "./images/bakery.png",
+        description: "My Modular Restaurant Website is a dynamic and user-friendly platform built with React. The project features a well-structured modular design, allowing for easy customization and maintenance. The menu items are efficiently managed using an array of objects, making it simple to update and modify. With its interactive interface and functional tabs, users can easily explore the restaurant's offerings and navigate the site seamlessly.",
+        codeLink: "https://github.com/jiankh/sprigsbakery",
+        previewLink: "https://jiankh.github.io/sprigsbakery/"
     },
     {
         title: "Calculator",
